@@ -1,0 +1,192 @@
+/*=============================================================================
+Base Styles
+=============================================================================*/
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.1em;
+}
+h6 {
+	font-size: 1.0em;
+	font-weight: bold;
+}
+.right {
+	float: right;
+	font-style: italic;
+}
+
+/*=============================================================================
+Column Layout (flexbox based, with commented out absolute position fallback)
+=============================================================================*/
+.container {
+	display: flex;
+	height: 100%;
+}
+
+.sidebar {
+	width: 2.25in;
+	min-width: 2.25in;
+	font-size: 1.2em;
+	margin-right: 0.25in;
+}
+
+/* Absolute position based, if flexbox not supported.
+.container {
+	height: 100%;
+	position: relative;
+	display: float;
+}
+.sidebar {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 2.25in;
+	font-size: 1.2em;
+}
+.content {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 5in;
+}
+*/
+
+/*=============================================================================
+Sidebar
+=============================================================================*/
+.nameplate {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+}
+.contact-list {
+	margin-top: 10px;
+	list-style-type: none;
+}
+.contact-list li {
+	margin-bottom: 5px;
+}
+.contact-list.fa-ul {
+	margin-left: 1.6em;
+}
+.sidebar section .heading {
+	text-align: left;
+	margin-top: 0.15in;
+}
+.tag-list {
+	display: flex;
+	flex-flow: row wrap;
+}
+.tag-list li {
+	list-style-type: none;
+	margin: 0 5px 5px 0;
+	padding: 2px 8px;
+	background: #F5F5F5;
+	border: 1px solid #D4D4D4;
+}
+
+.class-list {
+	display: flex;
+	flex-flow: row wrap;
+}
+.class-list li {
+	list-style-type: none;
+	position: relative;
+	margin: 0 5px 10px 0;
+	padding: 2px 8px 2px 72px;
+}
+.class-list .number {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 2px 5px;
+	border-right: 1px solid #999;
+	height: 100%;
+}
+.class-list .number.two-lines {
+	line-height: 2.3em;
+}
+
+.class-list .number.three-lines {
+	line-height: 3.8em;
+}
+
+.class-list .number.four-lines {
+	line-height: 4.6em;
+}
+
+/*=============================================================================
+Main Content
+=============================================================================*/
+section {
+	padding-bottom: 15px;
+}
+section .heading {
+	text-align: left;
+}
+section .heading::after {
+	content: '';
+	display: block;
+	width: 100%;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #888;
+}
+.subheading {
+	text-align: right;
+	margin: -8px 0 5px 0;
+}/*
+.website {
+	background: #F5F5F5;
+	border: 1px solid #D4D4D4;
+	padding: 2px 5px;
+}*/
+.subsection:not(:last-child) {
+	margin-bottom: 5px;
+}
+.subsection:after {
+	content: '';
+	clear: both;
+}
+.subsection li {
+	list-style-type: square;
+	margin: 0 0 0px 20px;
+}
+.projects {
+	display: flex;
+}
+.project {
+	width: 33%;
+	height: 110px;
+}
+.project:not(:last-child) {
+	margin-right: 10px;
+}
+.project-title {
+	text-align: center;
+	font-weight: bold;
+}
+.project-details {
+	text-align: center;
+}
