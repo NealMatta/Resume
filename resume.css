@@ -175,7 +175,7 @@ section .heading::after {
 }
 .projects {
 	display: flex;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 .project {
 	width: 33%;
