@@ -92,7 +92,7 @@ Sidebar
 }
 .sidebar section .heading {
 	text-align: left;
-	margin-top: 0.15in;
+	margin-top: 0.075in;
 }
 .tag-list {
 	display: flex;
@@ -136,11 +136,15 @@ Sidebar
 	line-height: 4.6em;
 }
 
+#skills{
+	margin-top: 0.15in;
+}
+
 /*=============================================================================
 Main Content
 =============================================================================*/
 section {
-	padding-bottom: 15px;
+	padding-bottom: 13px;
 }
 section .heading {
 	text-align: left;
@@ -190,4 +194,11 @@ section .heading::after {
 }
 .project-details {
 	text-align: center;
+}
+
+/*=============================================================================
+Other Things
+=============================================================================*/
+.invisible {
+	display: none;
 }
