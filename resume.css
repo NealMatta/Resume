@@ -179,7 +179,6 @@ section .heading::after {
 }
 .projects {
 	display: flex;
-	padding-bottom: 60px;
 }
 .project {
 	width: 33%;
@@ -193,8 +192,10 @@ section .heading::after {
 	font-weight: bold;
 }
 .project-details {
-	text-align: center;
+	/* text-align: center; */
+	font-size: 12px;
 }
+
 
 /*=============================================================================
 Other Things
