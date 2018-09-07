@@ -161,12 +161,7 @@ section .heading::after {
 .subheading {
 	text-align: right;
 	margin: -8px 0 5px 0;
-}/*
-.website {
-	background: #F5F5F5;
-	border: 1px solid #D4D4D4;
-	padding: 2px 5px;
-}*/
+}
 .subsection:not(:last-child) {
 	margin-bottom: 5px;
 }
@@ -203,4 +198,20 @@ Other Things
 =============================================================================*/
 .invisible {
 	display: none;
+}
+
+#pb-32 {
+	padding-bottom: 32px;
+}
+
+#pl-20 {
+	padding-left: 20px;
+}
+
+#mh-2 {
+	min-height: 2in;
+}
+
+.w-80{
+	width: 180px;
 }
