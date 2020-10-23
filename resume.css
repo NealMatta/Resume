@@ -1,17 +1,24 @@
 /*=============================================================================
 Base Styles
 =============================================================================*/
-*, *:after, *:before {
+*,
+*:after,
+*:before {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: normal;
 	margin: 0;
 }
@@ -29,7 +36,7 @@ h5 {
 	font-size: 1.1em;
 }
 h6 {
-	font-size: 1.0em;
+	font-size: 1em;
 	font-weight: bold;
 }
 .right {
@@ -78,7 +85,7 @@ Column Layout (flexbox based, with commented out absolute position fallback)
 Sidebar
 =============================================================================*/
 .nameplate {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 40px;
 }
 .contact-list {
@@ -103,8 +110,8 @@ Sidebar
 	list-style-type: none;
 	margin: 0 5px 5px 0;
 	padding: 2px 8px;
-	background: #F5F5F5;
-	border: 1px solid #D4D4D4;
+	background: #f5f5f5;
+	border: 1px solid #d4d4d4;
 }
 
 .class-list {
@@ -137,7 +144,7 @@ Sidebar
 	line-height: 4.6em;
 }
 
-#skills{
+#skills {
 	margin-top: 0.15in;
 }
 
@@ -151,7 +158,7 @@ section .heading {
 	text-align: left;
 }
 section .heading::after {
-	content: '';
+	content: "";
 	display: block;
 	width: 100%;
 	margin-top: 3px;
@@ -166,7 +173,7 @@ section .heading::after {
 	margin-bottom: 5px;
 }
 .subsection:after {
-	content: '';
+	content: "";
 	clear: both;
 }
 .subsection li {
@@ -192,7 +199,6 @@ section .heading::after {
 	font-size: 12px;
 }
 
-
 /*=============================================================================
 Other Things
 =============================================================================*/
@@ -212,6 +218,10 @@ Other Things
 	min-height: 2in;
 }
 
-.w-80{
+.w-80 {
 	width: 180px;
+}
+
+#education-padding {
+	padding-top: 50px;
 }
