@@ -14,12 +14,11 @@
 
 
 
-		<!-- Uncomment this body style section out for printing.-->
 		<style>
-			/* body
+			body {
 				background: #333;
 				height: 100%;
-			} */
+			}
 
 			.page {
 				box-sizing: border-box;
@@ -34,6 +33,7 @@
 	</head>
 
 	<body>
+		<!-- Remove the page class for printing and PDF purposes -->
 		<div class="page">
 			<div class="container">
 				<div class="sidebar">
@@ -52,6 +52,30 @@
 						</li>
 					</ul>
 					<div id="skills">
+						<!-- Casual Skills -->
+						<section>
+							<h6 class="heading">Interests</h6>
+							<ul class="tag-list">
+								<li>Reading</li>
+								<li>Real Estate</li>
+								<li>Financial Literacy</li>
+								<li>Restructuring this Resume</li>
+								<li>Volleyball</li>
+								<li>Fitness</li>
+							</ul>
+						</section>
+						<section>
+							<h6 class="heading">Favorite Books</h6>
+							<ul class="tag-list">
+								<li>Rich Dad, Poor Dad</li>
+								<li>The Midnight Library</li>
+								<li>A Darker Shade of Magic</li>
+								<li>Six of Crows</li>
+								<li>H.I.V.E</li>
+							</ul>
+						</section>
+
+						<!-- Development Skills -->
 						<section>
 							<h6 class="heading">Programming Languages</h6>
 							<ul class="tag-list">
@@ -65,13 +89,13 @@
 								<li>C++</li>
 							</ul>
 						</section>
-						<section>
+						<section class="">
 							<h6 class="heading">Frameworks/Libraries</h6>
 							<ul class="tag-list">
 								<li>Vue</li>
 								<li>Bootstrap</li>
 								<li>SASS</li>
-								<li>Node Resque</li>
+								<!-- <li>Node Resque</li> -->
 								<!-- <li>React</li> -->
 								<!-- <li>React Native</li> -->
 								<li>Jinja</li>
@@ -79,7 +103,7 @@
 								<li>Express</li>
 							</ul>
 						</section>
-						<section>
+						<section class="invisible">
 							<h6 class="heading">Tools</h6>
 							<ul class="tag-list">
 								<li>Heroku</li>
@@ -88,7 +112,7 @@
 								<li>Adobe Premiere</li>
 							</ul>
 						</section>
-						<section>
+						<section class="invisible">
 							<h6 class="heading">Storage Systems</h6>
 							<ul class="tag-list">
 								<li>Firebase</li>
@@ -100,7 +124,7 @@
 								<li>Webpack</li>
 							</ul>
 						</section>
-						<section>
+						<section class="invisible">
 							<h6 class="heading">Certifications</h6>
 							<ul class="tag-list">
 								<li>Salesforce Admin</li>
@@ -122,13 +146,12 @@
 						<h2 class="heading">Employment</h2>
 
 						<div class="subsection">
-							<div class="right">Remote</br>June 2019 - </div>
+							<div class="right">Chicago, IL</br>January 2021 - Present </div>
 							<h3>Workday</h3>
 							<h4>Enterprise Architect</h4>
-							<h5><em>January 2021 - Present</em></h5>
-							<ul class="invisible">
-								<li>Create dashboards and reports internally for the General Manager</li>
-								<li>Provided data analytics about Appirio's different marketing strategies to improve sales</li>
+							<ul>
+								<li>Providing pre-sales technical support for the implementation of the Workday product</li>
+								<li>Using in-depth product knowledge to provide technical expertise to sales staff and the customer through sales presentations and product demonstrations</li>
 							</ul>
 						</div>
 
@@ -153,7 +176,7 @@
 								</ul>
 							</div>
 							
-							<h4>Salesforce / Technical Consultant</h4>
+							<h4 id="pt-5">Salesforce / Technical Consultant</h4>
 							<h5><em>June 2019 - October 2020</em></h5>
 							<ul>
 								<li>Launched a live marketing cloud implementation</li>
@@ -267,11 +290,20 @@
 							</ul>
 						</div>
 					</section>
+
 					<!-- Personal Projects -->
 					<section id="pb-32">
 						<h2 class="heading">Personal Projects</h2>
 						<div class="projects">
 							<div class="project">
+								<h4 class="project-title">RPW Cinematography</h4>
+								<div class="project-details">
+									Led a full Salesforce implementation from gathering requests, implementing 
+									the system, and providing coverage after. With my help, they were able to move away 
+									from using Google Sheets and saved the client 20 hours of bookkeeping time per week. 
+								</div>
+							</div>
+							<div class="project invisible">
 								<h4 class="project-title">PartyQueue</h4>
 								<div class="project-details">
 									Creating an iOS App to allow users to queue up songs from multiple streaming
@@ -298,13 +330,14 @@
 							<div class="project">
 								<h4 class="project-title">KTP Website</h4>
 								<div class="project-details">
-									Led a team of 10 to redevelop the KTP website. Used HTML, CSS,
-									Javascript, and bootstrap to build the site. Led weekly meetings
-									throughout the semester to ensure completion
+									Led a team of 10 to redevelop my business fraternities website. Used HTML, 
+									CSS, Javascript, and bootstrap to build the site. I coordinated with multiple 
+									schedules to set meetings, assigned deadlines, and completed work of my own. 
+									We successfully launched at the end of the semester.
 								 </div>
 							</div>
 							
-							<div class="project">
+							<div class="project invisible">
 								<h4 class="project-title">BlackJack Helper</h4>
 								<div class="project-details">
 									Developed C++ program to allow user to simulate games of
